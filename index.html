@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Télécharger Once Human V3 - Pack OP Exclusif</title>
+    <meta name="description" content="Survivez dans le monde post-apocalyptique ultime. Téléchargez Once Human V3 maintenant et obtenez votre Pack OP exclusif.">
+    
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Once Human V3 - The Ultimate Survival Experience">
+    <meta property="og:description" content="Survivez, lootez, dominez. Le nouvel ordre mondial vous attend.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1600&auto=format&fit=crop">
+    <meta property="og:url" content="https://oncehuman-v3.com">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis for smooth scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine@3.1.0/tsparticles.engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-stars@3.1.0/tsparticles.preset.stars.min.js"></script>
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Particles Container (Background) -->
+    <div id="tsparticles"></div>
+
+    <!-- Exit Intent Popup -->
+    <div id="exit-popup" class="exit-popup">
+        <div class="exit-popup-content glitch-box">
+            <h2 class="glitch-text" data-text="NE PARTEZ PAS SANS VOTRE PACK OP !">NE PARTEZ PAS SANS VOTRE PACK OP !</h2>
+            <p>5000 Golden Tokens & +1 Arme Légendaire V3 si tu télécharges maintenant.</p>
+            <button class="cta-button primary-cta exit-trigger">RÉCUPÉRER MON PACK IMMÉDIATEMENT</button>
+            <button class="close-popup">Je préfère mourir dans les Terres Désolées</button>
+        </div>
+    </div>
+
+    <main class="smooth-scroll-wrapper">
+
+        <!-- Section 1 : Hero -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-wrapper">
+                <!-- Official video bg -->
+                <video class="hero-bg parallax-target" autoplay muted loop playsinline>
+                    <source src="https://oncehuman.v.easebar.com/2026/0119/20260119.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="badge-new">NOUVELLE MISE À JOUR V3</div>
+                <h1 class="glitch-text" data-text="ONCE HUMAN V3">ONCE HUMAN V3</h1>
+                <h2 class="hero-subtitle">LA SURVIE N'A JAMAIS ÉTÉ AUSSI BRUTALE.</h2>
+                <p class="hero-desc">Rejoignez 5 millions de Déviants. Dominez le nouvel ordre mondial. Le chaos n'attend pas.</p>
+                <div class="cta-wrapper">
+                    <button class="cta-button sticky-cta pulse-glow" onclick="document.getElementById('urgency').scrollIntoView({behavior: 'smooth'})">TÉLÉCHARGER GRATUITEMENT</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 : Problème / Solution (3D Cards) -->
+        <section id="problem-solution" class="problem-section">
+            <div class="container">
+                <h2 class="section-title text-center">VOUS ÊTES UNE PROIE... <span class="text-accent">JUSQU'À AUJOURD'HUI.</span></h2>
+                <div class="cards-grid">
+                    <div class="flip-card stagger-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>MUTANTS IMPITOYABLES</h3>
+                                <p>Des horreurs cosmiques écrasent les débutants en boucle.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>ARSENAL V3 OP</h3>
+                                <p>Débloquez le Cannon Plasma et retournez la situation. Devenez le chasseur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flip-card stagger-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>RESSOURCES ÉPUISÉES</h3>
+                                <p>Le farm est long, la survie est un enfer quotidien.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>TERRITOIRES RICHES</h3>
+                                <p>Exploitez les nouvelles zones de faille dimensionnelle. Loot illimité.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card stagger-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>SEUL CONTRE TOUS</h3>
+                                <p>Les guildes ennemies vous pillent sans pitié.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>ALLIANCES GÉANTES</h3>
+                                <p>Rejoignez la Méta. Créez des forteresses impénétrables avec votre crew.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 : Preuves Sociales (Horizontal Carousel) -->
+        <section id="social-proof" class="proof-section">
+            <div class="proof-sticky-container">
+                <h2 class="section-title text-center">ILS ONT SURVÉCU. <span class="text-secondary">ET VOUS ?</span></h2>
+                <div class="horizontal-scroll-container">
+                    <div class="proof-track">
+                        <!-- Card 1 -->
+                        <div class="proof-item">
+                            <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-1_759a48d4.png" alt="Gameplay" class="parallax-img">
+                            <div class="testimonial">
+                                <span class="stars">★★★★★</span>
+                                <p class="typewriter">"Le meilleur jeu de survie de 2024. Le patch V3 change tout."</p>
+                                <span class="author">- IGN FR</span>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="proof-item">
+                            <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-2_b501c895.png" alt="Gameplay" class="parallax-img">
+                            <div class="testimonial">
+                                <span class="stars">★★★★★</span>
+                                <p class="typewriter">"Graphismes AAA, gunplay nerveux, un banger absolu."</p>
+                                <span class="author">- @GamerX_Pro</span>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="proof-item">
+                            <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-3_04f56fbc.png" alt="Gameplay" class="parallax-img">
+                            <div class="testimonial">
+                                <span class="stars">★★★★★</span>
+                                <p class="typewriter">"J'ai passé 400h dessus. La nouvelle guerre de territoires est dingue."</p>
+                                <span class="author">- Communauté Reddit</span>
+                            </div>
+                        </div>
+                        <!-- Card 4 placeholder buffer -->
+                        <div class="proof-item buffer">
+                            <h2 class="text-glow">REJOIGNEZ-LES</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 : Features (Grid Morphing & SVG) -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2 class="section-title text-center">UN MOTEUR DE DESTRUCTION <span class="text-primary">NOUVELLE GÉNÉRATION</span></h2>
+                <div class="features-grid">
+                    <div class="feat-box explode-item">
+                        <div class="feat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="draw-stroke">
+                                <path stroke="var(--primary)" stroke-width="2" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3>CONSTRUCTION DYNAMIQUE</h3>
+                        <p>Bâtissez des forteresses mouvantes et défendez-vous contre des raids impitoyables.</p>
+                        <div class="feat-img-wrapper"><img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-4_9ed4f43b.png" alt="Build" class="zoom-img"></div>
+                    </div>
+
+                    <div class="feat-box explode-item">
+                        <div class="feat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="draw-stroke">
+                                <path stroke="var(--secondary)" stroke-width="2" d="M12 22v-7l-5-4m10 4l-5-4V3l5 4v8z" />
+                            </svg>
+                        </div>
+                        <h3>BOSS TITANESQUES</h3>
+                        <p>Affrontez des aberrations cosmiques de la taille de gratte-ciels en coop à 40.</p>
+                        <div class="feat-img-wrapper"><img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-5_0ff2a3c3.png" alt="Boss" class="zoom-img"></div>
+                    </div>
+
+                    <div class="feat-box explode-item">
+                        <div class="feat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="draw-stroke">
+                                <path stroke="var(--accent)" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                <path stroke="var(--accent)" stroke-width="2" d="M10 10l4 4" />
+                            </svg>
+                        </div>
+                        <h3>LOOT ULTRA PAYANT</h3>
+                        <p>Système de drop V3 revu. Plus de grind infernal, que du skill récompensé.</p>
+                        <div class="feat-img-wrapper"><img src="https://www.oncehuman.game/pc/fab/20250114111146/img/kv20260112_1f38dace.jpg" alt="Loot" class="zoom-img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 : Urgence (Pinned Countdown) -->
+        <section id="urgency" class="urgency-section">
+            <div class="urgency-content">
+                <h2 class="glitch-text" data-text="DROP EXCLUSIF LIMITÉ">DROP EXCLUSIF LIMITÉ</h2>
+                <p>Le Starter Pack "Néon Abyssal" contenant des armes OP et 5000 crédits disparaît dans :</p>
+                <div class="countdown" id="countdown">
+                    <div class="time-box"><span id="minutes">14</span><span class="label">MIN</spanv></div>
+                    <span class="colon">:</span>
+                    <div class="time-box"><span id="seconds">59</span><span class="label">SEC</span></div>
+                </div>
+                <!-- Particles explosion on hover -->
+                <button class="cta-button massive-cta" id="download-cta">RÉCLAMER MON PACK MAINTENANT</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="fade-footer">
+            <div class="container footer-content">
+                <div class="footer-logo">
+                    <span class="text-glow" style="font-family: var(--font-orbitron); font-size: 1.5rem; font-weight: 900; color: var(--primary);">ONCE HUMAN V3</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Support</a>
+                </div>
+                <p class="copyright">© 2026 Once Human. Tous droits réservés. Jeu PEGI 16.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
